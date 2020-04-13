@@ -7,8 +7,7 @@ export default class CategoryNavigation extends Component {
   render() {
     return (
       <>
-
-        <ToggleLink exact={true} to={this.props.baseUrl}>
+        <ToggleLink exact={false} to={`${this.props.baseUrl}/all`}>
             All
         </ToggleLink>
         { this.props.categories && this.props.categories.map(cat =>
